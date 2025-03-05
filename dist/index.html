@@ -27,7 +27,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <!-- Using "Services" instead of Portfolio -->
+                        <!-- Renamed Portfolio to Services -->
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Services</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
@@ -65,9 +65,9 @@
                 </div>
                 <!-- Services Grid Items-->
                 <div class="row justify-content-center">
-                    <!-- Service Item 1-->
+                    <!-- Service Item 1: Genomic Data Analysis-->
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white">
                                     Genomic Data Analysis
@@ -76,9 +76,9 @@
                             <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="Genomic Data Analysis" />
                         </div>
                     </div>
-                    <!-- Service Item 2-->
+                    <!-- Service Item 2: Polygenic Score Development-->
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white">
                                     Polygenic Score Development
@@ -87,9 +87,9 @@
                             <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="Polygenic Score Development" />
                         </div>
                     </div>
-                    <!-- Service Item 3-->
+                    <!-- Service Item 3: Precision Medicine Consulting-->
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white">
                                     Precision Medicine Consulting
@@ -188,9 +188,8 @@
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Location</h4>
                         <p class="lead mb-0">
-                            2215 John Daniel Drive
                             <br />
-                            Clark, MO 65243
+                            Somerville, MA 02144
                         </p>
                     </div>
                     <!-- Footer Social Icons-->
@@ -214,6 +213,109 @@
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
             <div class="container"><small>Copyright &copy; Genomission, LLC 2025</small></div>
+        </div>
+        <!-- Services Modals-->
+        <!-- Modal 1: Genomic Data Analysis-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Modal Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Genomic Data Analysis</h2>
+                                    <!-- Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Modal Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="Genomic Data Analysis" />
+                                    <!-- Modal Text-->
+                                    <p class="mb-4">Our Genomic Data Analysis service helps you extract actionable insights from complex genomic datasets. We leverage advanced computational techniques to analyze large-scale genetic data, identify patterns, and inform research or clinical decisions.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 2: Polygenic Score Development-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Modal Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Polygenic Score Development</h2>
+                                    <!-- Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Modal Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="Polygenic Score Development" />
+                                    <!-- Modal Text-->
+                                    <p class="mb-4">We develop and refine polygenic risk scores to improve disease risk prediction. Our approach integrates genetic, environmental, and clinical data to create robust scoring systems that support precision medicine initiatives.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 3: Precision Medicine Consulting-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Modal Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Precision Medicine Consulting</h2>
+                                    <!-- Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Modal Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="Precision Medicine Consulting" />
+                                    <!-- Modal Text-->
+                                    <p class="mb-4">Our Precision Medicine Consulting service provides strategic guidance to biotech and pharmaceutical companies. We help optimize clinical trial design, validate biomarkers, and integrate genomics into therapeutic decision-making.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
